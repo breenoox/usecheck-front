@@ -37,6 +37,12 @@ export type ClosingTemplate = {
   active: boolean;
 };
 
+/** Lightweight shape returned by the `/closing-templates` list endpoint, used to populate selects. */
+export type ClosingTemplateSummary = {
+  id: number;
+  name: string;
+};
+
 export type ClosingTemplateStep = {
   id: number;
   taxObligationId: number;
