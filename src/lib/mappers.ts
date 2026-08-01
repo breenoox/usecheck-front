@@ -4,6 +4,7 @@ import type {
   ClosingTemplate,
   ClosingTemplateBinding,
   ClosingTemplateStep,
+  ClosingTemplateSummary,
   Company,
   Organization,
   TaxObligation,
@@ -62,6 +63,13 @@ export function mapClosingTemplate(raw: Raw): ClosingTemplate {
     organizationId: Number(raw.organization_id ?? raw.organizationId ?? 0),
     name: String(raw.name ?? ""),
     active: Boolean(raw.active),
+  };
+}
+
+export function mapClosingTemplateSummary(raw: Raw): ClosingTemplateSummary {
+  return {
+    id: Number(raw.id),
+    name: String(raw.name ?? ""),
   };
 }
 

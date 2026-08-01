@@ -70,7 +70,7 @@ export const closingTemplateStepCreateSchema = z.object({
 });
 
 export const closingTemplateBindingSchema = z.object({
-  closingTemplateId: z.coerce.number().int().positive("Informe o ID do modelo de fechamento"),
+  closingTemplateId: z.coerce.number().int().positive("Selecione o modelo de fechamento"),
 });
 
 export const closingStepCreateSchema = z.object({
